@@ -1,13 +1,10 @@
-import "./App.css";
+import React from "react";
+import { v4 as uuidv4 } from "uuid";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Starter</h1>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+  // uuidv4() - call dependency
+
+  return <div>App</div>;
+};
 
 export default App;
