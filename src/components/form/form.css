@@ -1,0 +1,59 @@
+form {
+  height: 40px;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+  height: 100%;
+  
+}
+
+input {
+  width: 70%;
+  padding: 0 18px;
+  background: #343a40;
+  color: #f9f9f9;
+  border: 1px solid #33383e;
+  border-radius: 20px;
+}
+
+input::placeholder {
+  color: #696f77;
+}
+
+button {
+  width: 20%;
+  background: #6459f5;
+  color: #f9f9f9;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: 1px solid #3c424a;
+  cursor: pointer;
+  transition: all 200ms;
+  border-radius: 20px;
+  margin-left: 50px;
+}
+
+button:hover {
+  background: #fff;
+  color: #6459f5;
+}
+
+/* Todo Styles */
+
+.todo {
+  margin: 14px 0 0 0;
+  width: 100%;
+  background: #343a40;
+  color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px;
+}
+
+i {
+  cursor: pointer;
+}
