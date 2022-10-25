@@ -37,6 +37,7 @@ const Form = () => {
       {todos.map((todo) => (
         <div key={todo.id} className="todo">
           <p>{todo.text}</p>
+          <i className="far fa-trash-alt"></i>
         </div>
       ))}
     </div>
