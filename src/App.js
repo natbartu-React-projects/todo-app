@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { v4 as uuidv4 } from "uuid";
+import Container from "./components/container/Container";
 import "./App.css";
 
 const App = () => {
@@ -20,7 +21,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <div className="container">
+      <Container>
         <form onSubmit={addTodo}>
           <input
             type="text"
@@ -30,7 +31,7 @@ const App = () => {
           />
           <button type="submit">Add</button>
         </form>
-      </div>
+      </Container>
     </div>
   );
 };
