@@ -9,6 +9,7 @@ const Form = () => {
 
   const addTodo = (e) => {
     e.preventDefault();
+    if (inputValue.trim() === "") return;
 
     setTodos([
       ...todos,
@@ -17,18 +18,28 @@ const Form = () => {
         id: uuidv4,
       },
     ]);
+
+    setInputValue("");
   };
 
   return (
-    <form onSubmit={addTodo}>
-      <input
-        type="text"
-        placeholder="Add a task..."
-        value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
-      />
-      <button type="submit">Add</button>
-    </form>
+    <div>
+      {" "}
+      <form onSubmit={addTodo}>
+        <input
+          type="text"
+          placeholder="Add a task..."
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+        />
+        <button type="submit">Add</button>
+      </form>
+      {todos.map((todo) => (
+        <div key={todo.id} className="todo">
+          <p>{todo.text}</p>
+        </div>
+      ))}
+    </div>
   );
 };
 
