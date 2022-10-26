@@ -8,3 +8,5 @@ An incremented feature adds the data to local storage, a delete button for delet
 I'm using the [uuid](https://www.npmjs.com/package/uuid) dependency on this application to allow the app to have a unique id when it creates the to-do list.
 
 ## Application Preview
+
+![gif-preview](assets/todo-app.gif)
