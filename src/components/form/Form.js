@@ -17,7 +17,7 @@ const Form = () => {
       ...todos,
       {
         text: inputValue,
-        id: uuidv4,
+        id: uuidv4(),
       },
     ]);
 
@@ -41,7 +41,7 @@ const Form = () => {
       const newTodos = localStorage.getItem("Todo");
       setTodos(JSON.parse([...todos, newTodos]));
     }
-  }, []);
+  }, [todos]);
 
   return (
     <div>
